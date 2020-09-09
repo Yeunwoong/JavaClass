@@ -2,24 +2,19 @@ package intro;
 
 public class Class_One {
 	public static void main(String[] args) {
-		System.out.println("Message Out Java Program");		
-	}
+		System.out.println("Message Out Java Program");
+		Person p = new Person(20, Constant.KOR);
+		CommonMethod.check(p);		
+	}	
 }
 
 class Person {
-    String name; 	 
     int age;
-    String target;
+    String country;
     
-    Person(String name){
-         this.name = name;
+    Person(int age, String country){
+    	this.age = age;
+    	this.country = country;
     }
     
-    void setAge(int age) {         
-        this.age = age;
-    }
-   
-    void hit(String enemy) {  
-        this.target = enemy; 
-    }
 }
