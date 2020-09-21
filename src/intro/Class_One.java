@@ -4,7 +4,8 @@ public class Class_One {
 	public static void main(String[] args) {
 		System.out.println("Message Out Java Program");
 		Person p = new Person(20, Constant.KOR);
-		CommonMethod.check(p);		
+		CommonMethod.check(p);	
+		
 	}	
 }
 

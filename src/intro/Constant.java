@@ -5,5 +5,5 @@ public class Constant {
 	static String KOR = "KOREA";
 	static int Threshold_USA = 19;
 	static int Threshold_KOR = 20;
-
+	
 }
