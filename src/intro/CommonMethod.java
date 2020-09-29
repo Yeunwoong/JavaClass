@@ -1,7 +1,8 @@
 package intro;
 
 public class CommonMethod {
-	static void check(Person person) {
+	
+	static void check(Person person) {  
 		boolean adult = false;
 		if(person.country.equals(Constant.USA)) {
 			if(person.age >= Constant.Threshold_USA)
@@ -45,13 +46,13 @@ public class CommonMethod {
 	}
 	
 	static String getGrade(Subject subject) {
-		if(subject.score<0) {
+		if(subject.getScore()<0) {
 			System.out.println("wrong score");
 			return "WRONG";
 		}			
-		if(subject.score>=80)  
+		if(subject.getScore()>=80)  
 			return "A+";
-		if(subject.score>=60)
+		if(subject.getScore()>=60)
 			return "A";
 		else
 			return "B+";
