@@ -3,7 +3,12 @@ package intro;
 public class Class_Three {
 	public static void main(String[] args) {
 		C c = new C();
-		Person p = new Student("");		
+		Person5 p = new Student("");		
+		p.draw();
+		printTest(p);
+	}
+	
+	static void printTest(Person5 p) {
 		p.draw();
 	}
 }
@@ -26,10 +31,10 @@ class C extends B {
 	}	
 }
 
-class Person {
+class Person5 {
 	String name;
 	String id;
-	public Person(String name) {
+	public Person5(String name) {
 		this.name = name;
 	}
 	public void draw() {
@@ -38,7 +43,7 @@ class Person {
 	
 }
 
-class Student extends Person {
+class Student extends Person5 {
 	String grade;
 	String department;
 	public Student(String name) {
@@ -46,6 +51,12 @@ class Student extends Person {
 	}
 	public void draw() {
 		System.out.println("Student draw");
+		super.draw();
 	}
+	
+	
+	
 }
+
+
 
